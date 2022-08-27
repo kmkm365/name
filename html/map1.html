@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>trashOFF</title>
   </head>
+
   <body>
     <div class="MapWrapper">
-      <img id="map" src="../TrashOFF/static/map1.png" />
+      <img id="map" src="/static/map1.png" />
     </div>
     <div class="False">
-      <img src="../TrashOFF/static/false.svg" />
+      <img src="/static/false.svg" />
     </div>
     <div class="NavBar">
-      <img src="../TrashOFF/static/mapB.svg" />
-      <img src="../TrashOFF/static/graphL.svg" />
-      <img src="../TrashOFF/static/questL.svg" />
-      <div id="profile" />
-    </div>
+      <img src="/static/mapB.svg" />
+      <img src="/static/graphL.svg" />
+      <img src="/static/questL.svg" />
+      <div id="profile">
+      </div>
   </body>
   <style>
     .MapWrapper {
@@ -32,6 +34,7 @@
       /* width: 100%; */
       /* background-image: url('../TrashOFF/static/map1.png'); */
     }
+
     #map {
       left: 0;
     }
@@ -43,6 +46,7 @@
 
       border: solid;
     }
+
     .NavBar {
       display: flex;
       align-items: center;
@@ -62,4 +66,8 @@
       background-color: greenyellow;
     }
   </style>
+  <script>
+    localStorage.setItem = ("rank1", "H");
+  </script>
+
 </html>
